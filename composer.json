@@ -1,8 +1,9 @@
 {
-  "name": "navid045/phpmellatbank",
+  "name": "navid045/mellatbank",
   "description": "Iranian Mellat Bank Gateway for PHP Projects",
   "keywords": [
     "Mellat",
+    "Mallat Bank",
     "Bank",
     "Gateway",
     "Online Payment",
