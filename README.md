@@ -23,7 +23,7 @@ To use the package for your payments you must instantiate the `Gateway` class
 and provide its configuration.
 
 ```php
-use MiladRahimi\PhpMellatBank\Gateway;
+use MellatBank\Gateway;
 
 $config = [
     'terminalId' => '...',
@@ -80,7 +80,7 @@ it also sends some parameters to the callback with `POST` method.
 Your callback url must verify the payment.
 
 ```php
-use MiladRahimi\PhpMellatBank\Gateway;
+use MellatBank\Gateway;
 
 $gateway = new Gateway($config);
 
@@ -107,5 +107,5 @@ It holds the real response in its message.
 This problem usually occurs when someone/something other than bank calls your callback url.
 
 ## License
-MellatBank is created by [Milad Rahimi](http://miladrahimi.com) and changed by [Navid Hosseini](email:navid045@gmail.com)
+MellatBank is created by [Milad Rahimi](http://miladrahimi.com) and changed by [Navid Hosseini](https://github.com/navid045)
 and released under the [MIT License](http://opensource.org/licenses/mit-license.php).
