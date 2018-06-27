@@ -3,8 +3,8 @@ Iranian Mellat Bank Gateway for PHP Projects
 
 ## Installation
 
-```
-composer require miladrahimi/phpmellatbank
+```bash
+composer require navid045/mellatbank
 ```
 
 ### Lifecycle
@@ -22,7 +22,7 @@ The process of an online payment with Mellat bank gateway consists of following 
 To use the package for your payments you must instantiate the `Gateway` class 
 and provide its configuration.
 
-```
+```php
 use MiladRahimi\PhpMellatBank\Gateway;
 
 $config = [
@@ -40,7 +40,7 @@ $gateway = new Gateway($config);
 As mentioned above, a the first step you must request for a new payment.
 It can be done this way:
 
-```
+```php
 $refId = $gateway->requestPayment($amountInRial, 'Some optional description...');
 ```
 
@@ -57,7 +57,7 @@ Now that you have gotten the `RefId` you can lead user to the bank gateway.
 
 To do this you should display an html form like this:
 
-```
+```html
 <form action="$bankGatewayUrl" method="post">
     <input type="hidden" name="RefId" value="$refId">
     <input type="submit" value="Pay">
@@ -67,7 +67,7 @@ To do this you should display an html form like this:
 The `$bankGatewayUrl` is an url that bank provides for you
 but you can get it from a `Gateway` instance this way:
 
-```
+```php
 $gateway->url()
 ```
 
@@ -79,7 +79,7 @@ it also sends some parameters to the callback with `POST` method.
 
 Your callback url must verify the payment.
 
-```
+```php
 use MiladRahimi\PhpMellatBank\Gateway;
 
 $gateway = new Gateway($config);
