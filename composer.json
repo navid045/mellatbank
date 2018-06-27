@@ -1,5 +1,5 @@
 {
-  "name": "miladrahimi/phpmellatbank",
+  "name": "navid045/phpmellatbank",
   "description": "Iranian Mellat Bank Gateway for PHP Projects",
   "keywords": [
     "Mellat",
@@ -8,20 +8,20 @@
     "Online Payment",
     "Iran"
   ],
-  "homepage": "http://miladrahimi.github.io",
+  "homepage": "https://github.com/navid045/phpmellatbank",
   "type": "library",
   "license": "MIT",
   "authors": [
     {
-      "name": "Milad Rahimi",
-      "email": "info@miladrahimi.com",
-      "homepage": "http://miladrahimi.com",
+      "name": "Navid Hosseini",
+      "email": "navid045@gmail.com",
+      "homepage": "https://github.com/navid045",
       "role": "Developer"
     }
   ],
   "support": {
-    "email": "info@miladrahimi.com",
-    "source": "https://github.com/miladrahimi/phpmellatbank/issues"
+    "email": "navid045@gmail.com",
+    "source": "https://github.com/navid045/phpmellatbank/issues"
   },
   "require": {
     "php": ">=5.4.0",
@@ -29,7 +29,7 @@
   },
   "autoload": {
     "psr-4": {
-      "MiladRahimi\\": "src/MiladRahimi/"
+      "MellatBank\\": "lib/MellatBank"
     }
   }
 }

@@ -6,7 +6,7 @@
  * Time: 3:23 PM
  */
 
-namespace MiladRahimi\PhpMellatBank\Exceptions;
+namespace MellatBank\Exceptions;
 
 class MellatException extends \Exception
 {

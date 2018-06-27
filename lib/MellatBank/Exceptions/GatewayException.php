@@ -6,7 +6,7 @@
  * Time: 12:19 AM
  */
 
-namespace MiladRahimi\PhpMellatBank\Exceptions;
+namespace MellatBank\Exceptions;
 
 class GatewayException extends \Exception
 {

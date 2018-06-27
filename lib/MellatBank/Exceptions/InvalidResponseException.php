@@ -6,7 +6,7 @@
  * Time: 3:28 PM
  */
 
-namespace MiladRahimi\PhpMellatBank\Exceptions;
+namespace MellatBank\Exceptions;
 
 class InvalidResponseException extends \Exception
 {

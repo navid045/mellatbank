@@ -6,7 +6,7 @@
  * Time: 10:32 PM
  */
 
-namespace MiladRahimi\PhpMellatBank\Values;
+namespace MellatBank\Values;
 
 class BankResult
 {

@@ -6,12 +6,12 @@
  * Time: 12:16 AM
  */
 
-namespace MiladRahimi\PhpMellatBank;
+namespace MellatBank;
 
-use MiladRahimi\PhpMellatBank\Exceptions\GatewayException;
-use MiladRahimi\PhpMellatBank\Exceptions\InvalidResponseException;
-use MiladRahimi\PhpMellatBank\Exceptions\MellatException;
-use MiladRahimi\PhpMellatBank\Values\BankResult;
+use MellatBank\Exceptions\GatewayException;
+use MellatBank\Exceptions\InvalidResponseException;
+use MellatBank\Exceptions\MellatException;
+use MellatBank\Values\BankResult;
 use SoapClient;
 use SoapFault;
 
