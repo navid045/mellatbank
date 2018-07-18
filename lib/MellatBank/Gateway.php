@@ -153,11 +153,12 @@ class Gateway
         $client->bpSettleRequest($parameters);
 
         $bankResult = new BankResult();
-        $bankResult->refId = isset($_POST['RefId']) ?: null;
-        $bankResult->resCode = $_POST['ResCode'];
-        $bankResult->saleOrderId = isset($_POST['SaleOrderId']) ?: null;
-        $bankResult->saleReferenceId = isset($_POST['CardHolderInfo']) ?: null;
-        $bankResult->cardHolderInfo = isset($_POST['CardHolderPan']) ?: null;
+        $bankResult->refId = isset($_POST['RefId']) ? $_POST['RefId'] : null;
+        $bankResult->resCode = isset($_POST['ResCode']) ? $_POST['ResCode'] : null;
+        $bankResult->saleOrderId = isset($_POST['SaleOrderId']) ? $_POST['SaleOrderId'] : null;
+        $bankResult->saleReferenceId = isset($_POST['SaleReferenceId']) ? $_POST['SaleReferenceId'] : null;
+        $bankResult->cardHolderInfo = isset($_POST['CardHolderInfo']) ? $_POST['CardHolderInfo'] : null;
+        $bankResult->cardHolderPan = isset($_POST['CardHolderPan']) ? $_POST['CardHolderPan'] : null;
 
         return $bankResult;
     }
